@@ -1,0 +1,11 @@
+"Group"
+Group "group1":
+  CpHost: cpmodule (10.10.10.11)
+  Host: host1 (10.10.10.10)
+
+GroupWithExclusion "excl_grp1":
+ obj in: Any
+ except: Group "group1":
+  CpHost: cpmodule (10.10.10.11)
+  Host: host1 (10.10.10.10)
+

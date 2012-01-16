@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="../nat_policy.xsl"?>
+
+
+<fw_policies>
+	<fw_policie>
+		<Name>##Standard</Name>
+		<Class_Name>firewall_policy</Class_Name><collection>	<Name>Standard</Name>	<Table>policies_collections</Table></collection><default>0</default><queries></queries><queries_adtr></queries_adtr><rule_adtr><rule_adtr> <Name></Name> <Class_Name>address_translation_rule</Class_Name><Rule_UUID>{36A5B39C-84C9-4573-966C-F378EB3029B9}</Rule_UUID> <Rule_Number>1</Rule_Number><comments><![CDATA[]]></comments><disabled>false</disabled><dst_adtr><dst_adtr>	<Name>net_192.168.0.0-24</Name>	<Table>network_objects</Table></dst_adtr></dst_adtr><dst_adtr_translated> <Name></Name> <Class_Name>translate_static</Class_Name><reference>	<Name>Any</Name>	<Table>globals</Table></reference><adtr_method><![CDATA[adtr_method_static]]></adtr_method></dst_adtr_translated><global_location><![CDATA[middle]]></global_location><install><install>	<Name>Any</Name>	<Table>globals</Table></install></install><name><![CDATA[]]></name><rule_block_number>1</rule_block_number><services_adtr><services_adtr>	<Name>Any</Name>	<Table>globals</Table></services_adtr></services_adtr><services_adtr_translated> <Name></Name> <Class_Name>service_translate</Class_Name><reference>	<Name>Any</Name>	<Table>globals</Table></reference><adtr_method><![CDATA[adtr_method_static]]></adtr_method></services_adtr_translated><src_adtr><src_adtr>	<Name>Host1</Name>	<Table>network_objects</Table></src_adtr></src_adtr><src_adtr_translated> <Name></Name> <Class_Name>translate_hide</Class_Name><reference>	<Name>host1</Name>	<Table>network_objects</Table></reference><adtr_method><![CDATA[adtr_method_hide]]></adtr_method></src_adtr_translated></rule_adtr></rule_adtr><use_VPN_communities>true</use_VPN_communities>
+	</fw_policie>
+</fw_policies>

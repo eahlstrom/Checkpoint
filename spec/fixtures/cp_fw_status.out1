@@ -1,0 +1,29 @@
+==== fixtures ===
+  Network objects:                            -> 14
+    Checkpoint::NetworkObject::DynamicNetObj      -> 6
+    Checkpoint::SharedObjects::AnyObject          -> 2
+    Checkpoint::NetworkObject::Network            -> 2
+    Checkpoint::NetworkObject::Group              -> 1
+    Checkpoint::NetworkObject::GroupWithExclusion -> 1
+    Checkpoint::NetworkObject::Host_plain         -> 1
+    Checkpoint::NetworkObject::Host_ckp           -> 1
+
+  Services:                                   -> 446
+    tcp_service                                   -> 190
+    udp_service                                   -> 85
+    service_group                                 -> 48
+    other_service                                 -> 46
+    dcerpc_service                                -> 32
+    rpc_service                                   -> 18
+    icmp_service                                  -> 13
+    icmpv6_service                                -> 5
+    compound_tcp_service                          -> 4
+    gtp_mm_v0_service                             -> 1
+    gtp_service                                   -> 1
+    gtp_mm_v1_service                             -> 1
+    tcp_citrix_service                            -> 1
+    gtp_v1_service                                -> 1
+
+  Rules:                                      -> 5
+    Standard                                      -> 5
+

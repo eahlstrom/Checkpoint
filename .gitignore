@@ -1,0 +1,8 @@
+.bundle
+dev/*
+tmp/*
+*.swp
+pkg/*
+*.bak
+spec/fixtures/*.mar
+rdoc/*

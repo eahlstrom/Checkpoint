@@ -1,0 +1,15 @@
+== DESCRIPTION:
+
+Checkpoint is a parser lib for Checkpoint firewalls WebVisualizer XML output.
+
+This lib is only tested with XML outputs from R65 and R71 but I guess is should work with R75.
+
+Expect a lot of parser bugs as I haven't tested this coded against a lot of different rulebases.
+
+== FEATURES:
+
+* Security policy rule simulation. (no NAT support)
+* Network objects enumeration.
+* Generating static host files from cluster objects.
+* Generate rulebase statistics. (# rule, objects used etc.)
+

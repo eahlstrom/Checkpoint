@@ -1,0 +1,37 @@
+[?1034hStandard> src 10.1.1.1 dst 10.1.1.2 srv tcp:22
+Standard> exit
+Loading rulebase_file -> "spec/fixtures/Standard_Security_Policy.xml"
+Loading network_objects_file  -> "spec/fixtures/network_objects.xml"
+Loading service_objects_file  -> "spec/fixtures/services.xml"
+--------------------------------------------------
+
+  Usage: 
+  src NET_MATCH_OBJECT dst NET_MATCH_OBJECT srv SERVICE_MATCH_OBJECT [all show_object_only]
+
+  NET_MATCH_OBJECT     => 192.168.1.1 | 192.168.1.0/24 | name:host_10.1.1.1 | any
+  SERVICE_MATCH_OBJECT => tcp:22 tcp:22-50 udp:53 icmp proto:17 name:ssh | any
+  all                  => Don't stop at first matching rule.
+  show_object_only     => Show only matching object in output.
+
+  examples:
+    src 10.1.1.1 dst 10.1.1.2 srv tcp:22
+    src 10.1.1.1 dst name:host_10.1.1.2 srv name:ssh
+    
+  Rulebase loaded: Standard_Security_Policy.xml
+
+
+--------------------------------------------------
+
+Loading...
+cache rulebase...
+cache network_objects...
+cache service_objects...
+
+Testing: src 10.1.1.1 dst 10.1.1.2 srv tcp:22
+  [01;30m-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  [01;30mRule#  NAME                SRC                                                         DST                                                         SERVICE                            ACTION    COMMENT                  
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  [00m[01;30m| [01;31m5[00m                        [01;29mAny [00m                                                        [01;29mAny [00m                                                        [01;29mAny [00m                               [01;31mdrop[00m                               
+  [01;30m-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  [00m
+
