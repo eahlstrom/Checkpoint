@@ -6,6 +6,7 @@ This lib is only tested with XML outputs from R65 and R71 but I guess is should 
 
 Expect a lot of parser bugs as I haven't tested this coded against a lot of different rulebases.
 
+
 == FEATURES:
 
 * Security policy rule simulation. (no NAT support)
@@ -13,3 +14,11 @@ Expect a lot of parser bugs as I haven't tested this coded against a lot of diff
 * Generating static host files from cluster objects.
 * Generate rulebase statistics. (# rule, objects used etc.)
 
+
+== INSTALL:
+
+  $ sudo gem install bundler
+  $ sudo bundle check
+  $ sudo bundle install
+  $ bundle exec rake build
+  $ sudo gem install ./pkg/checkpoint-XX.gem
